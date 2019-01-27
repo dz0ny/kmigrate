@@ -1,0 +1,15 @@
+kind: CronJobs
+patch:
+- op: add
+  path: /jobTemplate/spec/template/spec/volumes/1
+  value:
+    emptyDir: {}
+    name: cache
+- op: add
+  path: /jobTemplate/spec/template/spec/containers/0/volumeMounts/1
+  value:
+    mountPath: /var/www/cache
+    name: cache
+selectors:
+  label: app=woocart
+version: batch/v1beta1
