@@ -22,6 +22,10 @@ Use "kmigrate [command] --help" for more information about a command.
 
 Look at `example/cronjobs.yaml` for example how migration file looks like. There is also interactive `kmigrate create` which guides you trought creation of the migration.
 
+## TODO
+
+- Support more selectors (name, annotations, container iamge and others)
+
 
 Example of migration:
 
